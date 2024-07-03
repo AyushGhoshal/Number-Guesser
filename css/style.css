@@ -1,0 +1,130 @@
+/* Body and General Styling */
+
+html {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #fff;
+}
+
+body {
+  width: 80%;
+  max-width: 900px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+}
+
+
+/* Button Styles */
+
+button,
+#subt {
+  background-color: #6b0c65;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 1.2em;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+#subt:hover {
+  background-color: #c46aea;
+}
+
+
+/* Input Field */
+
+#guessField {
+  color: #000;
+  width: 90%;
+  max-width: 600px;
+  height: 70px;
+  font-size: 1.5em;
+  border: 3px solid #6c5ce7;
+  margin-top: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+#guessField:focus {
+  outline: none;
+  border-color: #8e44ad;
+}
+
+
+/* Wrapper Styles */
+
+#wrapper {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: linear-gradient(45deg, #163ea5, #3498db);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+}
+
+h1 {
+  background-color: #cb3050;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(108, 92, 231, 0.3);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
+  text-align: center;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+}
+
+p {
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* Add these styles for blinking effect */
+
+@keyframes blink-red {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.lowOrHi.too-low {
+  color: red;
+  font-weight: bold;
+  animation: blink-red 2s infinite;
+  -webkit-animation: blink-red 2s infinite;
+}
+
+.lowOrHi.too-high {
+  color: red;
+  font-weight: bold;
+  animation: blink-red 2s infinite;
+  -webkit-animation: blink-red 2s infinite;
+}
